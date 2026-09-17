@@ -5,22 +5,30 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Navigation Toggle
+  // Mobile Navigation Toggle with Smooth Slide-in Animation
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileNav = document.getElementById('mobile-nav');
   const mobileNavClose = document.getElementById('mobile-nav-close');
   const mobileLinks = document.querySelectorAll('.mobile-link');
 
   if (mobileMenuBtn && mobileNav) {
-    mobileMenuBtn.addEventListener('click', () => {
+    const openMobileNav = () => {
       mobileNav.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        mobileNav.classList.add('is-open');
+      });
       document.body.style.overflow = 'hidden';
-    });
+    };
 
     const closeMobileNav = () => {
-      mobileNav.classList.add('hidden');
+      mobileNav.classList.remove('is-open');
+      setTimeout(() => {
+        mobileNav.classList.add('hidden');
+      }, 320);
       document.body.style.overflow = '';
     };
+
+    mobileMenuBtn.addEventListener('click', openMobileNav);
 
     if (mobileNavClose) {
       mobileNavClose.addEventListener('click', closeMobileNav);
@@ -28,6 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', closeMobileNav);
+    });
+
+    mobileNav.addEventListener('click', (e) => {
+      if (e.target === mobileNav) closeMobileNav();
     });
   }
 
@@ -645,9 +657,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // =========================================================================
+  // CARD-LEVEL SCROLL ENTRANCE ANIMATIONS (Mobile & Desktop)
+  // =========================================================================
+  function initCardAnimations() {
+    const cards = document.querySelectorAll(
+      '.doctor-card, .treatment-card, .service-card, .feature-card, .gallery-card, .review-slide-card, .values-grid article'
+    );
+    if (!cards.length) return;
+
+    cards.forEach(card => card.classList.add('animate-card-enter'));
+
+    if ('IntersectionObserver' in window) {
+      const cardObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('card-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.05,
+        rootMargin: '0px 0px -20px 0px'
+      });
+
+      cards.forEach(card => cardObserver.observe(card));
+    } else {
+      cards.forEach(card => card.classList.add('card-visible'));
+    }
+  }
+
   // Initialize animations
   initStatCounters();
   initScrollReveals();
+  initCardAnimations();
   initNavbarScroll();
   initSmoothAnchors();
 });

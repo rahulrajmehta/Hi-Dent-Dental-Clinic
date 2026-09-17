@@ -24,7 +24,7 @@
 </head>
 <body class="subpage bg-white text-slate-700 antialiased selection:bg-blue-100 selection:text-blue-900">
   <!-- TOP BAR -->
-  <div class="top-bar bg-slate-900 text-slate-300 py-2 border-b border-slate-800 text-xs sm:text-sm">
+  <div class="top-bar hidden md:block bg-slate-900 text-slate-300 py-2 border-b border-slate-800 text-xs sm:text-sm">
     <div class="site-container flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center gap-4 flex-wrap">
         <span class="inline-flex items-center gap-1.5 text-slate-300">
@@ -48,8 +48,17 @@
   <!-- NAVIGATION -->
   <header id="main-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
     <div class="site-container flex items-center justify-between py-3">
-      <a href="index.html" class="flex items-center gap-2">
-        <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="clinic-logo h-12 md:h-14 w-auto object-contain" />
+      <!-- Clinic Logo & Brand Name -->
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group">
+        <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="clinic-logo h-10 sm:h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+        <div class="flex flex-col justify-center">
+          <span class="font-extrabold text-slate-900 text-base sm:text-lg md:text-xl tracking-tight leading-none font-poppins">
+            Hi Dent <span class="text-brand-blue">Dental Clinic</span>
+          </span>
+          <span class="text-[10px] sm:text-xs text-slate-500 font-medium tracking-wide mt-0.5">
+            Multi-Speciality Care · Ranchi
+          </span>
+        </div>
       </a>
       <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
         <a href="index.html" class="hover:text-brand-blue transition-colors">Home</a>
@@ -59,7 +68,6 @@
         <a href="gallery.html" class="hover:text-brand-blue transition-colors">Gallery</a>
         <a href="testimonials.html" class="hover:text-brand-blue transition-colors">Reviews</a>
         <a href="contact.html" class="hover:text-brand-blue transition-colors">Visit Our Clinic</a>
-        
       </nav>
       <div class="hidden sm:flex items-center gap-3">
         <a href="tel:7004184115" class="btn-outline py-2 px-4 text-xs md:text-sm">
@@ -69,7 +77,7 @@
           <i class="fa-regular fa-calendar-check"></i> Book Appointment
         </a>
       </div>
-      <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-700 hover:text-brand-blue focus:outline-none">
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-700 hover:text-brand-blue focus:outline-none" aria-label="Open menu">
         <i class="fa-solid fa-bars-staggered text-2xl"></i>
       </button>
     </div>
@@ -80,8 +88,14 @@
     <div class="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
       <div>
         <div class="flex items-center justify-between pb-4 border-b border-slate-100">
-          <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic" class="h-10 w-auto" />
-          <button id="mobile-nav-close" class="p-2 text-slate-400 hover:text-slate-700 text-xl"><i class="fa-solid fa-xmark"></i></button>
+          <div class="flex items-center gap-2.5">
+            <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic" class="h-9 w-auto object-contain" />
+            <div class="flex flex-col">
+              <span class="font-bold text-slate-900 text-sm leading-tight font-poppins">Hi Dent <span class="text-brand-blue">Dental Clinic</span></span>
+              <span class="text-[10px] text-slate-400">Ranchi, Jharkhand</span>
+            </div>
+          </div>
+          <button id="mobile-nav-close" class="p-2 text-slate-400 hover:text-slate-700 text-xl" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="flex flex-col gap-4 mt-6 font-medium text-slate-800">
           <a href="index.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Home</a>
@@ -91,7 +105,6 @@
           <a href="gallery.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Gallery</a>
           <a href="testimonials.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Reviews</a>
           <a href="contact.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Visit Our Clinic</a>
-          
         </div>
       </div>
       <div class="flex flex-col gap-3 pt-6 border-t border-slate-100">
@@ -109,16 +122,16 @@
   <section class="subpage-hero-banner text-center" style="background-image: url('assets/images/generated/clinic_operatory.jpg');">
     <div class="subpage-hero-overlay"></div>
     <div class="site-container max-w-3xl mx-auto subpage-hero-content text-white py-6">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-blue-200 border border-white/20 font-semibold text-xs sm:text-sm mb-4 shadow-lg">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-blue-200 border border-white/20 font-semibold text-xs sm:text-sm mb-4 shadow-lg animate-hero-fade-up">
         <i class="fa-solid fa-user-doctor text-brand-red"></i> Dedicated Medical Faculty
       </div>
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-md">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-md animate-hero-fade-up delay-100 font-poppins">
         Our 5 Specialist Doctors
       </h1>
-      <p class="mt-4 text-blue-100/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow">
+      <p class="mt-4 text-blue-100/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow animate-hero-fade-up delay-200">
         Dedicated MDS super-specialists leading specialized dental departments with computerized precision & hospital-grade sterilization at Dipatoli, Ranchi.
       </p>
-      <div class="mt-6 flex items-center justify-center gap-2 text-xs text-blue-200/80">
+      <div class="mt-6 flex items-center justify-center gap-2 text-xs text-blue-200/80 animate-hero-fade-up delay-300">
         <a href="index.html" class="hover:text-white transition-colors">Home</a>
         <span>/</span>
         <span class="text-white font-semibold">Specialist Doctors</span>
@@ -126,7 +139,8 @@
     </div>
   </section>
 
-  <section class="py-16 bg-slate-50 reveal-on-scroll">
+  <!-- DOCTORS GRID WITH OPERATORY BACKGROUND -->
+  <section class="py-16 md:py-24 doctors-page-section">
     <div class="site-container">
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         
