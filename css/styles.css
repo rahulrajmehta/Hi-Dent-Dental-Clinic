@@ -806,17 +806,39 @@ section[class*="bg-blue-900"] h1, section[class*="bg-blue-900"] h2, section[clas
 .stagger-reveal > *:nth-child(5) { transition-delay: 0.28s; }
 .stagger-reveal > *:nth-child(6) { transition-delay: 0.34s; }
 
-/* 3. Sticky Navbar Elevation & Shrink */
+/* 3. Sticky Navbar Elevation, Desktop Sizing & Clean Nav Alignment */
 #main-header {
   transition: padding 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 #main-header .site-container {
+  max-width: 1360px;
   transition: padding-top 0.3s ease, padding-bottom 0.3s ease;
+}
+
+#main-header nav a {
+  white-space: nowrap !important;
+}
+
+#main-header .btn-outline,
+#main-header .btn-primary {
+  white-space: nowrap !important;
+  flex-shrink: 0;
+}
+
+.brand-text-mobile {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .brand-text-mobile {
+    display: none !important;
+  }
 }
 
 .clinic-logo {
   transition: height 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
 }
 
 #main-header.header-scrolled {
