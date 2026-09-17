@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental Treatments & Services | Hi Dent Dental Clinic Ranchi</title>
+  <meta name="description" content="Complete dental treatments in Dipatoli Ranchi: RCT, Dental Implants, Braces & Clear Aligners, Teeth Whitening, Crown & Bridges, Kids Dental Care." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { blue: '#005eb8', 'blue-dark': '#00448a', 'blue-light': '#e0f2fe', red: '#dc2626', 'red-dark': '#b91c1c', 'red-light': '#fee2e2' } },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Plus Jakarta Sans', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="subpage bg-white text-slate-700 antialiased selection:bg-blue-100 selection:text-blue-900">
+  <!-- TOP BAR -->
+  <div class="top-bar bg-slate-900 text-slate-300 py-2 border-b border-slate-800 text-xs sm:text-sm">
+    <div class="site-container flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-solid fa-location-dot text-brand-red"></i>
+          Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi - 834001
+        </span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-regular fa-clock text-blue-400"></i>
+          Mon - Sat: 9:30 AM - 8:30 PM | Sun: 10 AM - 2 PM
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:7004184115" class="inline-flex items-center gap-1.5 font-semibold text-white hover:text-blue-300 transition-colors">
+          <i class="fa-solid fa-phone-volume text-brand-red"></i>
+          +91 7004184115
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header id="main-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="site-container flex items-center justify-between py-3">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="clinic-logo h-12 md:h-14 w-auto object-contain" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-brand-blue transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brand-blue transition-colors">About Clinic</a>
+        <a href="doctors.html" class="hover:text-brand-blue transition-colors">Specialist Doctors</a>
+        <a href="services.html" class="text-brand-blue font-bold border-b-2 border-brand-blue pb-1">Treatments</a>
+        <a href="gallery.html" class="hover:text-brand-blue transition-colors">Gallery</a>
+        <a href="testimonials.html" class="hover:text-brand-blue transition-colors">Reviews</a>
+        <a href="contact.html" class="hover:text-brand-blue transition-colors">Visit Our Clinic</a>
+        
+      </nav>
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:7004184115" class="btn-outline py-2 px-4 text-xs md:text-sm">
+          <i class="fa-solid fa-phone"></i> Call Clinic
+        </a>
+        <a href="contact.html#appointment" class="btn-primary py-2 px-4 text-xs md:text-sm">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-700 hover:text-brand-blue focus:outline-none">
+        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav" class="hidden fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm lg:hidden">
+    <div class="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+          <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic" class="h-10 w-auto" />
+          <button id="mobile-nav-close" class="p-2 text-slate-400 hover:text-slate-700 text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col gap-4 mt-6 font-medium text-slate-800">
+          <a href="index.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Home</a>
+          <a href="about.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">About Clinic</a>
+          <a href="doctors.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Specialist Doctors</a>
+          <a href="services.html" class="mobile-link py-2 border-b border-slate-50 text-brand-blue font-bold">Treatments</a>
+          <a href="gallery.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Gallery</a>
+          <a href="testimonials.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Reviews</a>
+          <a href="contact.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Visit Our Clinic</a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 pt-6 border-t border-slate-100">
+        <a href="contact.html#appointment" class="btn-primary w-full text-center py-2.5 text-sm">
+          <i class="fa-regular fa-calendar-check mr-2"></i> Book Appointment
+        </a>
+        <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="btn-red w-full text-center py-2.5 text-sm">
+          <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO BANNER WITH CINEMATIC DENTAL BACKGROUND IMAGE -->
+  <section class="subpage-hero-banner text-center" style="background-image: url('assets/images/generated/clinic_operatory.jpg');">
+    <div class="subpage-hero-overlay"></div>
+    <div class="site-container max-w-3xl mx-auto subpage-hero-content text-white py-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-blue-200 border border-white/20 font-semibold text-xs sm:text-sm mb-4 shadow-lg">
+        <i class="fa-solid fa-tooth text-brand-red"></i> Multi-Discipline Care
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-md">
+        All 10 Specialized Dental Treatments
+      </h1>
+      <p class="mt-4 text-blue-100/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow">
+        State-of-the-art restorative, cosmetic, and surgical dental solutions with computer-guided accuracy at Heritage Garden, Dipatoli, Ranchi.
+      </p>
+      <div class="mt-6 flex items-center justify-center gap-2 text-xs text-blue-200/80">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-white font-semibold">Treatments & Services</span>
+      </div>
+    </div>
+  </section>
+
+    <section class="py-16 bg-slate-50 reveal-on-scroll">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="badge-blue mb-2"><i class="fa-solid fa-stethoscope"></i> Complete Clinical Roster</span>
+        <h2 class="text-3xl font-bold text-slate-900">All 10 Specialized Dental Treatments</h2>
+        <p class="text-slate-600 text-sm mt-2">Every procedure performed with cutting-edge equipment, high-grade sterilization, and gentle care by our 5 specialists.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- 1. RCT (Root Canal Treatment) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/rct.jpg" alt="RCT (Root Canal Treatment)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-green-700 bg-green-100 rounded-full shadow-sm">
+                Painless / 1 Sitting
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-tooth text-brand-red"></i> Endodontics
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                1. RCT (Root Canal Treatment)
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Led by Dr. Tapan Mandal (RCT Specialist)</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Stop toothache and eliminate deep bacterial infection inside the pulp. Using computerized apex locators and flexible rotary nickel-titanium files, the treatment is completed in a single painless session with long-lasting structural strength.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=RCT#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book RCT (Root Canal Treatment) Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 2. Orthodontics (Braces & Aligners) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/orthodontics.jpg" alt="Orthodontics (Braces & Aligners)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-blue-700 bg-blue-100 rounded-full shadow-sm">
+                Metal / Ceramic / Clear
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-grip text-brand-red"></i> Orthodontics
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                2. Orthodontics (Braces & Aligners)
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Led by Dr. Sparsh (Orthodontics Specialist)</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Fix crowded teeth, irregular bite alignments, and gaps between teeth. We offer invisible clear aligners, aesthetic tooth-colored ceramic braces, and traditional metal brackets for both teens and adults.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Orthodontics#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Orthodontics (Braces & Aligners) Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 3. Teeth Whitening -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/teeth_whitening.jpg" alt="Teeth Whitening" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-amber-700 bg-amber-100 rounded-full shadow-sm">
+                Instant 6-8 Shades Lighter
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-wand-magic-sparkles text-brand-red"></i> Cosmetic Care
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                3. Teeth Whitening
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Professional Laser Whitening</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Effortlessly erase stubborn stains caused by tea, coffee, smoking, and age. Our dental-grade whitening light makes your smile 6 to 8 shades lighter without damaging natural enamel in under an hour.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Teeth#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Teeth Whitening Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 4. Extraction (Tooth Removal) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/tooth_extraction.jpg" alt="Extraction (Tooth Removal)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-purple-700 bg-purple-100 rounded-full shadow-sm">
+                Wisdom Teeth Specialist
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-syringe text-brand-red"></i> Oral Surgery
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                4. Extraction (Tooth Removal)
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Led by Dr. Saurav (Oral Surgeon)</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Gentle atraumatic removal of severely decayed, broken teeth and surgical extraction of impacted, painful third molars (wisdom teeth) with rapid healing protocols and computerized local anesthesia.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Extraction#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Extraction (Tooth Removal) Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 5. Crown & Bridge (Caps, Veneers) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/crown_bridge.jpg" alt="Crown & Bridge (Caps, Veneers)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-blue-700 bg-blue-100 rounded-full shadow-sm">
+                Zirconia & E-Max
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-crown text-brand-red"></i> Prosthodontics
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                5. Crown & Bridge (Caps, Veneers)
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Natural Aesthetic Matching</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Reinforce weak teeth after root canal therapy or replace missing teeth with permanent fixed bridges. We provide translucent, metal-free Zirconia and ultra-thin porcelain veneers for unmatched aesthetics.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Crown#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Crown & Bridge (Caps, Veneers) Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 6. Dentures (False Teeth) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/dentures.jpg" alt="Dentures (False Teeth)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-slate-700 bg-slate-100 rounded-full shadow-sm">
+                Flexible & BPS Dentures
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-shapes text-brand-red"></i> Prosthetics
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                6. Dentures (False Teeth)
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Comfortable Bite Restoration</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Regain natural chewing power, facial structure, and clear speech with precision-fit complete dentures, lightweight flexible partial dentures, or implant-supported overdentures designed for zero slippage.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Dentures#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Dentures (False Teeth) Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 7. Implants (Dental Implants) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/dental_implants.jpg" alt="Implants (Dental Implants)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-emerald-700 bg-emerald-100 rounded-full shadow-sm">
+                Lifetime Durability
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-screwdriver text-brand-red"></i> Implantology
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                7. Implants (Dental Implants)
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Led by Dr. Harish Kumar & Dr. Saurav</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Permanent titanium roots surgically placed into the jawbone to anchor lifelike crowns or fixed bridges. Preserves surrounding bone, eliminates gaps, and functions exactly like your original natural teeth.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Implants#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Implants (Dental Implants) Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 8. Cosmetic Dentistry -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/cosmetic_dentistry.jpg" alt="Cosmetic Dentistry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-pink-700 bg-pink-100 rounded-full shadow-sm">
+                Smile Design & Veneers
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-face-smile text-brand-red"></i> Aesthetics
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                8. Cosmetic Dentistry
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Artistic Smile Designing</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Artistic smile makeover combining tooth contouring, composite gap filling, porcelain veneers, and gum symmetry correction to give you the camera-ready, flawless smile you've always dreamed of.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Cosmetic#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Cosmetic Dentistry Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 9. Pedodontics (Kids Dental Care) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/pedodontics.jpg" alt="Pedodontics (Kids Dental Care)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-orange-700 bg-orange-100 rounded-full shadow-sm">
+                Child Friendly Clinic
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-baby text-brand-red"></i> Pediatric Care
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                9. Pedodontics (Kids Dental Care)
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Led by Dr. Moni Seema (Pedodontist Specialist)</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Compassionate pediatric dental care for infants, children, and adolescents. Pain-free cavity fillings, pit & fissure decay protection, fluoride treatments, and friendly habit coaching in a child-centered setup.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Pedodontics#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Pedodontics (Kids Dental Care) Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>        <!-- 10. Periodontal Treatment (Gum Care) -->
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-brand-blue hover:shadow-md transition-all duration-300">
+          <div>
+            <!-- Image Header -->
+            <div class="relative w-full h-52 sm:h-56 overflow-hidden bg-slate-100">
+              <img src="assets/images/treatments/periodontics.jpg" alt="Periodontal Treatment (Gum Care)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-900/20 to-transparent"></div>
+              <span class="absolute top-3 right-3 text-xs font-bold px-3 py-1 bg-white/95 backdrop-blur-sm text-red-700 bg-red-100 rounded-full shadow-sm">
+                Bleeding Gums Cure
+              </span>
+              <span class="absolute bottom-3 left-3 text-xs font-bold text-white flex items-center gap-1.5 drop-shadow-md">
+                <i class="fa-solid fa-shield-heart text-brand-red"></i> Periodontics
+              </span>
+            </div>
+
+            <!-- Content Body -->
+            <div class="p-6 sm:p-7">
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
+                10. Periodontal Treatment (Gum Care)
+              </h3>
+              <p class="text-xs font-semibold text-brand-blue mt-1">Led by Dr. Harish Kumar (Periodontist)</p>
+              <p class="text-sm text-slate-600 mt-3 leading-relaxed">Specialized therapy for bleeding gums, periodontitis, mobile teeth, and persistent bad breath. Includes ultrasonic calculus removal, deep subgingival scaling, and gum regenerative procedures.</p>
+            </div>
+          </div>
+
+          <!-- Footer Button -->
+          <div class="p-6 sm:p-7 pt-0 mt-auto">
+            <div class="pt-4 border-t border-slate-100">
+              <a href="contact.html?treat=Periodontal#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold flex items-center justify-center gap-2">
+                Book Periodontal Treatment (Gum Care) Consultation <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BAND -->
+  <section class="py-16 bg-gradient-to-r from-blue-900 via-blue-950 to-slate-900 text-white text-center">
+    <div class="site-container max-w-3xl">
+      <h2 class="text-2xl sm:text-3xl font-bold">Ready for World-Class Dental Care in Ranchi?</h2>
+      <p class="text-slate-300 mt-3 text-sm sm:text-base">Visit our clinic at Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi. Consult with our 5 specialists today.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="contact.html#appointment" class="btn-primary py-3.5 px-8 text-sm font-bold shadow-lg">
+          <i class="fa-solid fa-calendar-check mr-2"></i> Book Consultation
+        </a>
+        <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="btn-red py-3.5 px-6 text-sm font-bold shadow-lg">
+          <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> Instant WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 text-sm pt-12 pb-8 border-t border-slate-900">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-slate-900">
+        <div class="lg:col-span-2">
+          <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="h-10 w-auto mb-3 brightness-110" />
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Hi Dent Dental Clinic brings Ranchi's top 5 dental super-specialists under one roof at Heritage Garden, Deepatoli. Painless RCT, Dental Implants, Braces & Aligners, and caring Pediatric Dentistry.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Specialists</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Harish Kumar (Periodontist)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Moni Seema (Pedodontist)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Saurav (Oral Surgeon)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Tapan Mandal (RCT)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Sparsh (Orthodontics)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Treatments</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="services.html" class="hover:text-blue-400">Root Canal Treatment</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Dental Implants</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Braces & Aligners</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Teeth Whitening</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Kids Dentistry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Visit Clinic</h4>
+          <p class="text-xs text-slate-400">Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi - 834001</p>
+          <p class="text-xs text-white font-bold mt-2"><a href="tel:7004184115">+91 7004184115</a></p>
+        </div>
+      </div>
+      <div class="pt-6 text-center text-xs text-slate-500">
+        Â© 2026 Hi Dent Dental Clinic Ranchi. All Rights Reserved. â€¢ Healthy Teeth, Confident Smile.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <div class="floating-actions" aria-label="Quick Contact Buttons">
+    <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+    <a href="tel:7004184115" class="floating-btn floating-call" title="Call Clinic Directly">
+      <i class="fa-solid fa-phone text-xl"></i>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

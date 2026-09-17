@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Hi Dent Dental Clinic | Ranchi Premier Multi-Speciality Dental Center</title>
+  <meta name="description" content="Learn about Hi Dent Dental Clinic in Dipatoli, Ranchi. Meet our 5 dental super-specialists, advanced digital diagnostic equipment, and strict hospital-grade sterilization." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { blue: '#005eb8', 'blue-dark': '#00448a', 'blue-light': '#e0f2fe', red: '#dc2626', 'red-dark': '#b91c1c', 'red-light': '#fee2e2' } },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Plus Jakarta Sans', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="subpage bg-white text-slate-700 antialiased selection:bg-blue-100 selection:text-blue-900">
+  <!-- TOP BAR -->
+  <div class="top-bar bg-slate-900 text-slate-300 py-2 border-b border-slate-800 text-xs sm:text-sm">
+    <div class="site-container flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-solid fa-location-dot text-brand-red"></i>
+          Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi - 834001
+        </span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-regular fa-clock text-blue-400"></i>
+          Mon - Sat: 9:30 AM - 8:30 PM | Sun: 10 AM - 2 PM
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:7004184115" class="inline-flex items-center gap-1.5 font-semibold text-white hover:text-blue-300 transition-colors">
+          <i class="fa-solid fa-phone-volume text-brand-red"></i>
+          +91 7004184115
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header id="main-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="site-container flex items-center justify-between py-3">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="clinic-logo h-12 md:h-14 w-auto object-contain" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-brand-blue transition-colors">Home</a>
+        <a href="about.html" class="text-brand-blue font-bold border-b-2 border-brand-blue pb-1">About Clinic</a>
+        <a href="doctors.html" class="hover:text-brand-blue transition-colors">Specialist Doctors</a>
+        <a href="services.html" class="hover:text-brand-blue transition-colors">Treatments</a>
+        <a href="gallery.html" class="hover:text-brand-blue transition-colors">Gallery</a>
+        <a href="testimonials.html" class="hover:text-brand-blue transition-colors">Reviews</a>
+        <a href="contact.html" class="hover:text-brand-blue transition-colors">Visit Our Clinic</a>
+        
+      </nav>
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:7004184115" class="btn-outline py-2 px-4 text-xs md:text-sm">
+          <i class="fa-solid fa-phone"></i> Call Clinic
+        </a>
+        <a href="contact.html#appointment" class="btn-primary py-2 px-4 text-xs md:text-sm">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-700 hover:text-brand-blue focus:outline-none">
+        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav" class="hidden fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm lg:hidden">
+    <div class="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+          <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic" class="h-10 w-auto" />
+          <button id="mobile-nav-close" class="p-2 text-slate-400 hover:text-slate-700 text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col gap-4 mt-6 font-medium text-slate-800">
+          <a href="index.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Home</a>
+          <a href="about.html" class="mobile-link py-2 border-b border-slate-50 text-brand-blue font-bold">About Clinic</a>
+          <a href="doctors.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Specialist Doctors</a>
+          <a href="services.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Treatments</a>
+          <a href="gallery.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Gallery</a>
+          <a href="testimonials.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Reviews</a>
+          <a href="contact.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Visit Our Clinic</a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 pt-6 border-t border-slate-100">
+        <a href="contact.html#appointment" class="btn-primary w-full text-center py-2.5 text-sm">
+          <i class="fa-regular fa-calendar-check mr-2"></i> Book Appointment
+        </a>
+        <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="btn-red w-full text-center py-2.5 text-sm">
+          <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO BANNER WITH CINEMATIC DENTAL BACKGROUND IMAGE -->
+  <section class="subpage-hero-banner text-center" style="background-image: url('assets/images/generated/clinic_operatory.jpg');">
+    <div class="subpage-hero-overlay"></div>
+    <div class="site-container max-w-3xl mx-auto subpage-hero-content text-white py-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-blue-200 border border-white/20 font-semibold text-xs sm:text-sm mb-4 shadow-lg">
+        <i class="fa-solid fa-hospital text-brand-red"></i> About Our Clinic
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-md">
+        Ranchi's Leading Multi-Speciality Dental Center
+      </h1>
+      <p class="mt-4 text-blue-100/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow">
+        Founded on the vision of making premium, painless dental healthcare accessible to every family in Ranchi, <strong>Hi Dent Dental Clinic</strong> brings together 5 MDS super-specialist doctors under one roof.
+      </p>
+      <div class="mt-6 flex items-center justify-center gap-2 text-xs text-blue-200/80">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-white font-semibold">About Clinic</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLINIC STORY & HIGHLIGHTS -->
+  <section class="py-16 bg-white reveal-on-scroll">
+    <div class="site-container">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="badge-red mb-3"><i class="fa-solid fa-heart-pulse"></i> Our Philosophy</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Why Having 5 Super-Specialists Matters For Your Smile</h2>
+          <p class="mt-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+            In modern dentistry, no single doctor can master every specialized procedure. That is why at Hi Dent Dental Clinic, we established a faculty of 5 dedicated specialists:
+          </p>
+          <div class="mt-6 space-y-3 text-sm">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <div><strong>Gum Care & Implants:</strong> Handled by Dr. Harish Kumar (Periodontist Specialist).</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <div><strong>Children Dentistry:</strong> Handled with gentle care by Dr. Moni Seema (Pedodontist Specialist).</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <div><strong>Oral Surgery & Wisdom Teeth:</strong> Handled surgically by Dr. Saurav (Consultant Oral Surgeon).</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <div><strong>Root Canal Treatment (RCT):</strong> Handled painlessly by Dr. Tapan Mandal (RCT Specialist).</div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <div><strong>Braces & Aligners:</strong> Designed aesthetically by Dr. Sparsh (Orthodontics Specialist).</div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
+          <img src="assets/images/gallery_cropped/gallery_05.jpg" alt="Dr Harish Kumar in Chamber at Hi Dent Ranchi" class="w-full h-96 object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 PILLARS OF HI DENT -->
+  <section class="py-16 bg-slate-50 border-t border-slate-200/60">
+    <div class="site-container">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Uncompromising Standards of Care</h2>
+        <p class="text-slate-600 mt-2 text-sm">Every patient at Hi Dent experiences the highest levels of safety and hygiene.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 rounded-xl bg-blue-50 text-brand-blue mx-auto flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-shield-virus"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Class-B Sterilization</h3>
+          <p class="text-xs text-slate-500">Autoclave sterilization ensuring 100% infection control for all surgical tools.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 rounded-xl bg-red-50 text-brand-red mx-auto flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-microscope"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Digital Diagnostics</h3>
+          <p class="text-xs text-slate-500">Low-radiation RVG digital sensors and high-definition intraoral camera analysis.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 rounded-xl bg-green-50 text-green-600 mx-auto flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-feather"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">100% Painless Tech</h3>
+          <p class="text-xs text-slate-500">Computerized rotary endodontics and local numbing protocols for zero-pain procedures.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 mx-auto flex items-center justify-center text-xl mb-3"><i class="fa-solid fa-hand-holding-heart"></i></div>
+          <h3 class="font-bold text-slate-900 text-sm mb-1">Transparent Pricing</h3>
+          <p class="text-xs text-slate-500">Clear cost estimates before starting treatment with no hidden fees or charges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BAND -->
+  <section class="py-16 bg-gradient-to-r from-blue-900 via-blue-950 to-slate-900 text-white text-center">
+    <div class="site-container max-w-3xl">
+      <h2 class="text-2xl sm:text-3xl font-bold">Ready for World-Class Dental Care in Ranchi?</h2>
+      <p class="text-slate-300 mt-3 text-sm sm:text-base">Visit our clinic at Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi. Consult with our 5 specialists today.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="contact.html#appointment" class="btn-primary py-3.5 px-8 text-sm font-bold shadow-lg">
+          <i class="fa-solid fa-calendar-check mr-2"></i> Book Consultation
+        </a>
+        <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="btn-red py-3.5 px-6 text-sm font-bold shadow-lg">
+          <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> Instant WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 text-sm pt-12 pb-8 border-t border-slate-900">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-slate-900">
+        <div class="lg:col-span-2">
+          <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="h-10 w-auto mb-3 brightness-110" />
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Hi Dent Dental Clinic brings Ranchi's top 5 dental super-specialists under one roof at Heritage Garden, Deepatoli. Painless RCT, Dental Implants, Braces & Aligners, and caring Pediatric Dentistry.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Specialists</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Harish Kumar (Periodontist)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Moni Seema (Pedodontist)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Saurav (Oral Surgeon)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Tapan Mandal (RCT)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Sparsh (Orthodontics)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Treatments</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="services.html" class="hover:text-blue-400">Root Canal Treatment</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Dental Implants</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Braces & Aligners</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Teeth Whitening</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Kids Dentistry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Visit Clinic</h4>
+          <p class="text-xs text-slate-400">Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi - 834001</p>
+          <p class="text-xs text-white font-bold mt-2"><a href="tel:7004184115">+91 7004184115</a></p>
+        </div>
+      </div>
+      <div class="pt-6 text-center text-xs text-slate-500">
+        Â© 2026 Hi Dent Dental Clinic Ranchi. All Rights Reserved. â€¢ Healthy Teeth, Confident Smile.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <div class="floating-actions" aria-label="Quick Contact Buttons">
+    <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+    <a href="tel:7004184115" class="floating-btn floating-call" title="Call Clinic Directly">
+      <i class="fa-solid fa-phone text-xl"></i>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

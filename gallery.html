@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery | Hi Dent Dental Clinic Ranchi | Treatment Rooms & Real Care</title>
+  <meta name="description" content="Explore real photos of Hi Dent Dental Clinic in Dipatoli, Ranchi. View our treatment operatory, doctor consultation chambers, pediatric care, and modern dental equipment." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#005eb8',
+              'blue-dark': '#00448a',
+              'blue-light': '#e0f2fe',
+              red: '#dc2626',
+              'red-dark': '#b91c1c',
+              'red-light': '#fee2e2',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="subpage bg-white text-slate-700 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- TOP BAR -->
+  <div class="top-bar bg-slate-900 text-slate-300 py-2 border-b border-slate-800 text-xs sm:text-sm">
+    <div class="site-container flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-solid fa-location-dot text-brand-red"></i>
+          Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi - 834001
+        </span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-regular fa-clock text-blue-400"></i>
+          Mon - Sat: 9:30 AM - 8:30 PM | Sun: 10 AM - 2 PM
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:7004184115" class="inline-flex items-center gap-1.5 font-semibold text-white hover:text-blue-300 transition-colors">
+          <i class="fa-solid fa-phone-volume text-brand-red"></i>
+          +91 7004184115
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header id="main-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="site-container flex items-center justify-between py-3">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="clinic-logo h-12 md:h-14 w-auto object-contain" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-brand-blue transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brand-blue transition-colors">About Clinic</a>
+        <a href="doctors.html" class="hover:text-brand-blue transition-colors">Specialist Doctors</a>
+        <a href="services.html" class="hover:text-brand-blue transition-colors">Treatments</a>
+        <a href="gallery.html" class="text-brand-blue font-bold border-b-2 border-brand-blue pb-1">Gallery</a>
+        <a href="testimonials.html" class="hover:text-brand-blue transition-colors">Reviews</a>
+        <a href="contact.html" class="hover:text-brand-blue transition-colors">Visit Our Clinic</a>
+      </nav>
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:7004184115" class="btn-outline py-2 px-4 text-xs md:text-sm">
+          <i class="fa-solid fa-phone"></i> Call Clinic
+        </a>
+        <a href="contact.html#appointment" class="btn-primary py-2 px-4 text-xs md:text-sm">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-700 hover:text-brand-blue focus:outline-none">
+        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav" class="hidden fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm lg:hidden">
+    <div class="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+          <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic" class="h-10 w-auto" />
+          <button id="mobile-nav-close" class="p-2 text-slate-400 hover:text-slate-700 text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col gap-4 mt-6 font-medium text-slate-800">
+          <a href="index.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Home</a>
+          <a href="about.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">About Clinic</a>
+          <a href="doctors.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Specialist Doctors (5)</a>
+          <a href="services.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Treatments & Services</a>
+          <a href="gallery.html" class="mobile-link py-2 border-b border-slate-50 text-brand-blue font-bold">Photo Gallery (29+)</a>
+          <a href="testimonials.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Patient Reviews</a>
+          <a href="contact.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Visit Our Clinic</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 pt-6 border-t border-slate-100">
+        <a href="contact.html#appointment" class="btn-primary w-full text-center py-2.5 text-sm">
+          <i class="fa-regular fa-calendar-check mr-2"></i> Book Appointment
+        </a>
+        <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="btn-red w-full text-center py-2.5 text-sm">
+          <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO BANNER WITH CINEMATIC DENTAL BACKGROUND IMAGE -->
+  <section class="subpage-hero-banner text-center" style="background-image: url('assets/images/generated/clinic_operatory.jpg');">
+    <div class="subpage-hero-overlay"></div>
+    <div class="site-container max-w-3xl mx-auto subpage-hero-content text-white py-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-blue-200 border border-white/20 font-semibold text-xs sm:text-sm mb-4 shadow-lg">
+        <i class="fa-solid fa-camera text-brand-red"></i> Real Photo Gallery
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-md">
+        Inside Hi Dent Dental Clinic
+      </h1>
+      <p class="mt-4 text-blue-100/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow">
+        Explore 29+ authentic photos showing our modern dental operatory rooms, doctor consultation chambers, patient care, and cutting-edge sterilization setup in Deepatoli, Ranchi.
+      </p>
+      <div class="mt-6 flex items-center justify-center gap-2 text-xs text-blue-200/80">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-white font-semibold">Clinic Gallery</span>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="mt-8 flex flex-wrap justify-center gap-2">
+        <button class="gallery-filter-btn active px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-blue-600 text-white transition-colors" data-filter="all">All Photos (29)</button>
+        <button class="gallery-filter-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors" data-filter="doctors">Doctor Chambers</button>
+        <button class="gallery-filter-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors" data-filter="operatory">Treatment Operatory</button>
+        <button class="gallery-filter-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors" data-filter="kids">Kids Dentistry</button>
+        <button class="gallery-filter-btn px-4 py-2 text-xs sm:text-sm font-semibold rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors" data-filter="facilities">Clinic Facilities</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <section class="py-14 md:py-20 bg-slate-50 reveal-on-scroll">
+    <div class="site-container">
+      <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="kids">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_01.jpg" data-title="Pediatric Dental Care" data-desc="Pedodontist Dr. Moni Seema treating pediatric child patient with gentle care.">
+            <img src="assets/images/gallery_cropped/gallery_01.jpg" alt="Pediatric Dental Care - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-pink-900/80 text-white">Kids Dentistry</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Pediatric Dental Care</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Pedodontist Dr. Moni Seema treating pediatric child patient with gentle care.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_02.jpg" data-title="Operatory Treatment Setup" data-desc="Advanced computerized dental chair operatory with digital monitoring.">
+            <img src="assets/images/gallery_cropped/gallery_02.jpg" alt="Operatory Treatment Setup - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Operatory Treatment Setup</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Advanced computerized dental chair operatory with digital monitoring.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="kids">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_03.jpg" data-title="Gentle Milk Tooth Care" data-desc="Comfortable pediatric dental procedure ensuring fear-free dental visits.">
+            <img src="assets/images/gallery_cropped/gallery_03.jpg" alt="Gentle Milk Tooth Care - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-pink-900/80 text-white">Kids Dentistry</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Gentle Milk Tooth Care</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Comfortable pediatric dental procedure ensuring fear-free dental visits.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_04.jpg" data-title="Painless Operatory Procedure" data-desc="Patient receiving comfortable treatment with precision surgical LED lamp.">
+            <img src="assets/images/gallery_cropped/gallery_04.jpg" alt="Painless Operatory Procedure - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Painless Operatory Procedure</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Patient receiving comfortable treatment with precision surgical LED lamp.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="doctors">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_05.jpg" data-title="Dr. Harish Kumar Chamber" data-desc="Periodontist & Implant Specialist Dr. Harish Kumar at his consultation chamber.">
+            <img src="assets/images/gallery_cropped/gallery_05.jpg" alt="Dr. Harish Kumar Chamber - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-blue-900/80 text-white">Doctor Chamber</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Dr. Harish Kumar Chamber</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Periodontist & Implant Specialist Dr. Harish Kumar at his consultation chamber.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_06.jpg" data-title="Microscopic Dental Setup" data-desc="High-precision rotary endodontic tools and sterilized operatory tray.">
+            <img src="assets/images/gallery_cropped/gallery_06.jpg" alt="Microscopic Dental Setup - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Microscopic Dental Setup</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">High-precision rotary endodontic tools and sterilized operatory tray.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="doctors">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_07.jpg" data-title="Patient Family Counseling" data-desc="Transparent case discussion and treatment planning with patients and family.">
+            <img src="assets/images/gallery_cropped/gallery_07.jpg" alt="Patient Family Counseling - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-blue-900/80 text-white">Doctor Chamber</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Patient Family Counseling</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Transparent case discussion and treatment planning with patients and family.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="facilities">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_08.jpg" data-title="Modern Diagnostic Corner" data-desc="RVG sensor diagnostics and digital smile chart display.">
+            <img src="assets/images/gallery_cropped/gallery_08.jpg" alt="Modern Diagnostic Corner - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-purple-900/80 text-white">Clinic Facility</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Modern Diagnostic Corner</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">RVG sensor diagnostics and digital smile chart display.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_09.jpg" data-title="Sterile Operatory Chair" data-desc="Ergonomic blue dental chair sterilized following Class-B autoclave protocols.">
+            <img src="assets/images/gallery_cropped/gallery_09.jpg" alt="Sterile Operatory Chair - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Sterile Operatory Chair</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Ergonomic blue dental chair sterilized following Class-B autoclave protocols.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="doctors">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_10.jpg" data-title="Patient Consultation Desk" data-desc="Welcoming doctor desk for smile designing, aligner and implant consultation.">
+            <img src="assets/images/gallery_cropped/gallery_10.jpg" alt="Patient Consultation Desk - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-blue-900/80 text-white">Doctor Chamber</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Patient Consultation Desk</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Welcoming doctor desk for smile designing, aligner and implant consultation.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="facilities">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_11.jpg" data-title="Instrument Autoclave Zone" data-desc="Strict infection control and hospital-grade sterilization protocol.">
+            <img src="assets/images/gallery_cropped/gallery_11.jpg" alt="Instrument Autoclave Zone - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-purple-900/80 text-white">Clinic Facility</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Instrument Autoclave Zone</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Strict infection control and hospital-grade sterilization protocol.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_12.jpg" data-title="Chairside Patient Care" data-desc="Gentle root canal and cavity restoration in a calm operatory environment.">
+            <img src="assets/images/gallery_cropped/gallery_12.jpg" alt="Chairside Patient Care - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Chairside Patient Care</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Gentle root canal and cavity restoration in a calm operatory environment.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="facilities">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_13.jpg" data-title="Specialist Dental Lounge" data-desc="Comfortable patient waiting area with dental awareness displays.">
+            <img src="assets/images/gallery_cropped/gallery_13.jpg" alt="Specialist Dental Lounge - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-purple-900/80 text-white">Clinic Facility</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Specialist Dental Lounge</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Comfortable patient waiting area with dental awareness displays.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_14.jpg" data-title="Crown & Veneer Fitting" data-desc="Aesthetic zirconia crown matching and precision bite adjustment.">
+            <img src="assets/images/gallery_cropped/gallery_14.jpg" alt="Crown & Veneer Fitting - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Crown & Veneer Fitting</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Aesthetic zirconia crown matching and precision bite adjustment.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_15.jpg" data-title="Advanced Rotary Endodontics" data-desc="Single-sitting root canal treatment tools for painless tooth salvation.">
+            <img src="assets/images/gallery_cropped/gallery_15.jpg" alt="Advanced Rotary Endodontics - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Advanced Rotary Endodontics</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Single-sitting root canal treatment tools for painless tooth salvation.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="doctors">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_16.jpg" data-title="Doctor One-on-One Counseling" data-desc="Personalized smile analysis and clear aligner guidance with doctor.">
+            <img src="assets/images/gallery_cropped/gallery_16.jpg" alt="Doctor One-on-One Counseling - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-blue-900/80 text-white">Doctor Chamber</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Doctor One-on-One Counseling</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Personalized smile analysis and clear aligner guidance with doctor.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="doctors">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_17.jpg" data-title="Family Dental Wellness" data-desc="Compassionate dental counseling ensuring complete family dental health.">
+            <img src="assets/images/gallery_cropped/gallery_17.jpg" alt="Family Dental Wellness - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-blue-900/80 text-white">Doctor Chamber</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Family Dental Wellness</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Compassionate dental counseling ensuring complete family dental health.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="facilities">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_18.jpg" data-title="Operatory Hygiene Protocol" data-desc="Pristine operatory cleanliness between every patient appointment.">
+            <img src="assets/images/gallery_cropped/gallery_18.jpg" alt="Operatory Hygiene Protocol - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-purple-900/80 text-white">Clinic Facility</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Operatory Hygiene Protocol</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Pristine operatory cleanliness between every patient appointment.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_19.jpg" data-title="Surgical Tooth Extraction Unit" data-desc="Equipment prepared for painless wisdom tooth extraction and minor oral surgery.">
+            <img src="assets/images/gallery_cropped/gallery_19.jpg" alt="Surgical Tooth Extraction Unit - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Surgical Tooth Extraction Unit</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Equipment prepared for painless wisdom tooth extraction and minor oral surgery.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="facilities">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_20.jpg" data-title="Digital RVG X-Ray Monitor" data-desc="Instant, low-radiation computerized digital X-ray diagnostics.">
+            <img src="assets/images/gallery_cropped/gallery_20.jpg" alt="Digital RVG X-Ray Monitor - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-purple-900/80 text-white">Clinic Facility</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Digital RVG X-Ray Monitor</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Instant, low-radiation computerized digital X-ray diagnostics.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="kids">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_21.jpg" data-title="Child-Friendly Treatment Chair" data-desc="Playful environment ensuring children feel safe and happy during dental visits.">
+            <img src="assets/images/gallery_cropped/gallery_21.jpg" alt="Child-Friendly Treatment Chair - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-pink-900/80 text-white">Kids Dentistry</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Child-Friendly Treatment Chair</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Playful environment ensuring children feel safe and happy during dental visits.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_22.jpg" data-title="Rotary File System" data-desc="Advanced computerized motor files for precision cleaning of infected canals.">
+            <img src="assets/images/gallery_cropped/gallery_22.jpg" alt="Rotary File System - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Rotary File System</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Advanced computerized motor files for precision cleaning of infected canals.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="doctors">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_23.jpg" data-title="Doctor Consultation Room" data-desc="Spacious private doctor consultation chamber at Heritage Garden, Ranchi.">
+            <img src="assets/images/gallery_cropped/gallery_23.jpg" alt="Doctor Consultation Room - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-blue-900/80 text-white">Doctor Chamber</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Doctor Consultation Room</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Spacious private doctor consultation chamber at Heritage Garden, Ranchi.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="facilities">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_24.jpg" data-title="Sterilized Instrument Tray" data-desc="Sealed, 100% sterile disposable diagnostic kits for each patient.">
+            <img src="assets/images/gallery_cropped/gallery_24.jpg" alt="Sterilized Instrument Tray - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-purple-900/80 text-white">Clinic Facility</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Sterilized Instrument Tray</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Sealed, 100% sterile disposable diagnostic kits for each patient.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_25.jpg" data-title="Orthodontic Aligners Station" data-desc="Clear aligners and braces smile designing and progress tracking.">
+            <img src="assets/images/gallery_cropped/gallery_25.jpg" alt="Orthodontic Aligners Station - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Orthodontic Aligners Station</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Clear aligners and braces smile designing and progress tracking.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_26.jpg" data-title="Implant Surgical Kit" data-desc="Biocompatible titanium implant systems and surgical precision tools.">
+            <img src="assets/images/gallery_cropped/gallery_26.jpg" alt="Implant Surgical Kit - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Implant Surgical Kit</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Biocompatible titanium implant systems and surgical precision tools.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_27.jpg" data-title="Modern Dental Unit" data-desc="Hydraulic dental chair unit equipped with ultrasonic scaler and high-speed suction.">
+            <img src="assets/images/gallery_cropped/gallery_27.jpg" alt="Modern Dental Unit - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Modern Dental Unit</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Hydraulic dental chair unit equipped with ultrasonic scaler and high-speed suction.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="doctors">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_28.jpg" data-title="Doctor Discussion Desk" data-desc="Clinical case review and post-treatment follow-up discussion.">
+            <img src="assets/images/gallery_cropped/gallery_28.jpg" alt="Doctor Discussion Desk - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-blue-900/80 text-white">Doctor Chamber</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Doctor Discussion Desk</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Clinical case review and post-treatment follow-up discussion.</p>
+          </div>
+        </div>        <div class="gallery-card group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="operatory">
+          <div class="relative h-64 overflow-hidden bg-slate-100 cursor-pointer gallery-trigger" data-img="assets/images/gallery_cropped/gallery_29.jpg" data-title="Full Operatory View" data-desc="Bright, hygienic treatment room designed for zero patient anxiety.">
+            <img src="assets/images/gallery_cropped/gallery_29.jpg" alt="Full Operatory View - Hi Dent Dental Clinic Ranchi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+            <span class="absolute bottom-3 left-3 text-[11px] font-bold px-2.5 py-1 rounded-md backdrop-blur-md bg-emerald-900/80 text-white">Operatory Care</span>
+            <div class="absolute inset-0 bg-slate-950/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="w-10 h-10 rounded-full bg-white/90 text-brand-blue flex items-center justify-center text-lg shadow-lg">
+                <i class="fa-solid fa-magnifying-glass-plus"></i>
+              </span>
+            </div>
+          </div>
+          <div class="p-4 bg-white">
+            <h3 class="font-bold text-slate-900 text-sm">Full Operatory View</h3>
+            <p class="text-xs text-slate-500 mt-1 line-clamp-2">Bright, hygienic treatment room designed for zero patient anxiety.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full bg-slate-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-800 flex flex-col">
+      <button id="lightbox-close" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-slate-800/80 hover:bg-slate-700 text-white text-xl flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="relative max-h-[75vh] flex items-center justify-center bg-black">
+        <img id="lightbox-img" src="" alt="Hi Dent Gallery Enlarged" class="max-h-[75vh] w-auto object-contain mx-auto" />
+      </div>
+      <div class="p-5 bg-slate-900 text-white">
+        <h4 id="lightbox-title" class="text-base font-bold text-white"></h4>
+        <p id="lightbox-desc" class="text-xs text-slate-300 mt-1"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CALL TO ACTION BAND -->
+  <section class="py-16 bg-gradient-to-r from-blue-900 via-blue-950 to-slate-900 text-white text-center">
+    <div class="site-container max-w-3xl">
+      <h2 class="text-2xl sm:text-3xl font-bold">Ready for a Confident, Healthy Smile?</h2>
+      <p class="text-slate-300 mt-3 text-sm sm:text-base">Visit our Ranchi center opposite Surendranath School, Dipatoli. Consult with our 5 specialists today.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="contact.html#appointment" class="btn-primary py-3.5 px-8 text-sm font-bold shadow-lg">
+          <i class="fa-solid fa-calendar-check mr-2"></i> Book Consultation
+        </a>
+        <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="btn-red py-3.5 px-6 text-sm font-bold shadow-lg">
+          <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> Instant WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 text-sm pt-12 pb-8 border-t border-slate-900">
+    <div class="site-container">
+      <div class="flex flex-col sm:flex-row items-center justify-between pb-8 border-b border-slate-900 gap-4">
+        <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Ranchi" class="h-10 w-auto brightness-110" />
+        <p class="text-xs text-slate-400">Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi - 834001</p>
+        <a href="tel:7004184115" class="text-white font-bold hover:text-blue-400">+91 7004184115</a>
+      </div>
+      <div class="pt-6 text-center text-xs text-slate-500">
+        Â© 2026 Hi Dent Dental Clinic Ranchi. All Rights Reserved. â€¢ Healthy Teeth, Confident Smile.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <div class="floating-actions" aria-label="Quick Contact Buttons">
+    <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+    <a href="tel:7004184115" class="floating-btn floating-call" title="Call Clinic Directly">
+      <i class="fa-solid fa-phone text-xl"></i>
+    </a>
+  </div>
+
+  <!-- GALLERY JAVASCRIPT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Nav
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileNav = document.getElementById('mobile-nav');
+      const mobileClose = document.getElementById('mobile-nav-close');
+      if (mobileBtn && mobileNav) {
+        mobileBtn.addEventListener('click', () => { mobileNav.classList.remove('hidden'); document.body.style.overflow = 'hidden'; });
+        const closeNav = () => { mobileNav.classList.add('hidden'); document.body.style.overflow = ''; };
+        if (mobileClose) mobileClose.addEventListener('click', closeNav);
+        document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeNav));
+      }
+
+      // Filter Tabs
+      const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+      const cards = document.querySelectorAll('.gallery-card');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active', 'bg-blue-600', 'text-white');
+            b.classList.add('bg-white', 'text-slate-700');
+          });
+          btn.classList.add('active', 'bg-blue-600', 'text-white');
+          btn.classList.remove('bg-white', 'text-slate-700');
+
+          const filter = btn.getAttribute('data-filter');
+          cards.forEach(card => {
+            const cat = card.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Lightbox Modal
+      const modal = document.getElementById('lightbox-modal');
+      const modalImg = document.getElementById('lightbox-img');
+      const modalTitle = document.getElementById('lightbox-title');
+      const modalDesc = document.getElementById('lightbox-desc');
+      const closeBtn = document.getElementById('lightbox-close');
+
+      document.querySelectorAll('.gallery-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          const src = trigger.getAttribute('data-img');
+          const title = trigger.getAttribute('data-title');
+          const desc = trigger.getAttribute('data-desc');
+
+          if (modalImg) modalImg.src = src;
+          if (modalTitle) modalTitle.textContent = title;
+          if (modalDesc) modalDesc.textContent = desc;
+          if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+          }
+        });
+      });
+
+      const closeModal = () => {
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+          document.body.style.overflow = '';
+        }
+      };
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Specialist Doctors | Hi Dent Dental Clinic Ranchi | 5 Specialists</title>
+  <meta name="description" content="Meet our 5 dental specialist doctors at Hi Dent Dental Clinic Dipatoli Ranchi: Dr. Harish Kumar, Dr. Moni Seema, Dr. Saurav, Dr. Tapan Mandal, Dr. Sparsh." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: { blue: '#005eb8', 'blue-dark': '#00448a', 'blue-light': '#e0f2fe', red: '#dc2626', 'red-dark': '#b91c1c', 'red-light': '#fee2e2' } },
+          fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Plus Jakarta Sans', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="subpage bg-white text-slate-700 antialiased selection:bg-blue-100 selection:text-blue-900">
+  <!-- TOP BAR -->
+  <div class="top-bar bg-slate-900 text-slate-300 py-2 border-b border-slate-800 text-xs sm:text-sm">
+    <div class="site-container flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-solid fa-location-dot text-brand-red"></i>
+          Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi - 834001
+        </span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-regular fa-clock text-blue-400"></i>
+          Mon - Sat: 9:30 AM - 8:30 PM | Sun: 10 AM - 2 PM
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:7004184115" class="inline-flex items-center gap-1.5 font-semibold text-white hover:text-blue-300 transition-colors">
+          <i class="fa-solid fa-phone-volume text-brand-red"></i>
+          +91 7004184115
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header id="main-header" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+    <div class="site-container flex items-center justify-between py-3">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="clinic-logo h-12 md:h-14 w-auto object-contain" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700">
+        <a href="index.html" class="hover:text-brand-blue transition-colors">Home</a>
+        <a href="about.html" class="hover:text-brand-blue transition-colors">About Clinic</a>
+        <a href="doctors.html" class="text-brand-blue font-bold border-b-2 border-brand-blue pb-1">Specialist Doctors</a>
+        <a href="services.html" class="hover:text-brand-blue transition-colors">Treatments</a>
+        <a href="gallery.html" class="hover:text-brand-blue transition-colors">Gallery</a>
+        <a href="testimonials.html" class="hover:text-brand-blue transition-colors">Reviews</a>
+        <a href="contact.html" class="hover:text-brand-blue transition-colors">Visit Our Clinic</a>
+        
+      </nav>
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="tel:7004184115" class="btn-outline py-2 px-4 text-xs md:text-sm">
+          <i class="fa-solid fa-phone"></i> Call Clinic
+        </a>
+        <a href="contact.html#appointment" class="btn-primary py-2 px-4 text-xs md:text-sm">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-700 hover:text-brand-blue focus:outline-none">
+        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav" class="hidden fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm lg:hidden">
+    <div class="absolute right-0 top-0 bottom-0 w-4/5 max-w-sm bg-white p-6 shadow-2xl flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+          <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic" class="h-10 w-auto" />
+          <button id="mobile-nav-close" class="p-2 text-slate-400 hover:text-slate-700 text-xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="flex flex-col gap-4 mt-6 font-medium text-slate-800">
+          <a href="index.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Home</a>
+          <a href="about.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">About Clinic</a>
+          <a href="doctors.html" class="mobile-link py-2 border-b border-slate-50 text-brand-blue font-bold">Specialist Doctors</a>
+          <a href="services.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Treatments</a>
+          <a href="gallery.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Gallery</a>
+          <a href="testimonials.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Reviews</a>
+          <a href="contact.html" class="mobile-link py-2 border-b border-slate-50 hover:text-brand-blue">Visit Our Clinic</a>
+          
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 pt-6 border-t border-slate-100">
+        <a href="contact.html#appointment" class="btn-primary w-full text-center py-2.5 text-sm">
+          <i class="fa-regular fa-calendar-check mr-2"></i> Book Appointment
+        </a>
+        <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="btn-red w-full text-center py-2.5 text-sm">
+          <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO BANNER WITH CINEMATIC DENTAL BACKGROUND IMAGE -->
+  <section class="subpage-hero-banner text-center" style="background-image: url('assets/images/generated/clinic_operatory.jpg');">
+    <div class="subpage-hero-overlay"></div>
+    <div class="site-container max-w-3xl mx-auto subpage-hero-content text-white py-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-blue-200 border border-white/20 font-semibold text-xs sm:text-sm mb-4 shadow-lg">
+        <i class="fa-solid fa-user-doctor text-brand-red"></i> Dedicated Medical Faculty
+      </div>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight drop-shadow-md">
+        Our 5 Specialist Doctors
+      </h1>
+      <p class="mt-4 text-blue-100/90 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto drop-shadow">
+        Dedicated MDS super-specialists leading specialized dental departments with computerized precision & hospital-grade sterilization at Dipatoli, Ranchi.
+      </p>
+      <div class="mt-6 flex items-center justify-center gap-2 text-xs text-blue-200/80">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-white font-semibold">Specialist Doctors</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-slate-50 reveal-on-scroll">
+    <div class="site-container">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Dr Harish Kumar -->
+        <div class="doctor-card bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-72 sm:h-80 bg-blue-50 relative overflow-hidden flex items-center justify-center">
+              <img src="assets/images/doctors/dr_harish_kumar.jpg" alt="Dr. Harish Kumar" class="h-full w-full object-cover object-[center_16%]" />
+              <span class="absolute bottom-3 left-3 bg-blue-900/85 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-md shadow">MDS Periodontist</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900">Dr. Harish Kumar</h3>
+              <p class="text-sm font-semibold text-brand-blue mt-0.5">Periodontist Specialist</p>
+              <p class="text-xs text-slate-500 mt-2">Specializing in advanced gum diseases, periodontal flap surgeries, ultrasonic scaling, and permanent titanium dental implants.</p>
+              <div class="mt-4 pt-4 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+                <p><i class="fa-solid fa-award text-amber-500 mr-2"></i> Expert in Dental Implants & Gum Surgery</p>
+                <p><i class="fa-regular fa-clock text-blue-500 mr-2"></i> Mon - Sat: Morning & Evening</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="contact.html?doc=Dr.+Harish+Kumar#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold">
+              Book Appointment with Dr. Harish
+            </a>
+          </div>
+        </div>
+
+        <!-- Dr Moni Seema -->
+        <div class="doctor-card bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-72 sm:h-80 bg-pink-50 relative overflow-hidden flex items-center justify-center">
+              <img src="assets/images/doctors/dr_moni_seema.jpg" alt="Dr. Moni Seema" class="h-full w-full object-cover object-[center_16%]" />
+              <span class="absolute bottom-3 left-3 bg-pink-900/85 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-md shadow">MDS Pedodontist</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900">Dr. Moni Seema</h3>
+              <p class="text-sm font-semibold text-pink-600 mt-0.5">Pedodontist Specialist</p>
+              <p class="text-xs text-slate-500 mt-2">Specializing in gentle dental care for toddlers, children and adolescents. Cavity prevention, milk tooth fillings, space maintainers.</p>
+              <div class="mt-4 pt-4 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+                <p><i class="fa-solid fa-award text-amber-500 mr-2"></i> 100% Fear-Free Child Care</p>
+                <p><i class="fa-regular fa-clock text-blue-500 mr-2"></i> Mon - Sat: Morning & Evening</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="contact.html?doc=Dr.+Moni+Seema#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold">
+              Book Appointment with Dr. Moni
+            </a>
+          </div>
+        </div>
+
+        <!-- Dr Saurav -->
+        <div class="doctor-card bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-72 sm:h-80 bg-indigo-50 relative overflow-hidden flex items-center justify-center">
+              <img src="assets/images/doctors/dr_saurav.jpg" alt="Dr. Saurav" class="h-full w-full object-cover object-[center_16%]" />
+              <span class="absolute bottom-3 left-3 bg-indigo-900/85 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-md shadow">MDS Oral Surgeon</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900">Dr. Saurav</h3>
+              <p class="text-sm font-semibold text-brand-blue mt-0.5">Consultant Oral Surgeon</p>
+              <p class="text-xs text-slate-500 mt-2">Specializing in complex wisdom tooth surgical removals, oral surgical interventions, maxillofacial diagnosis, and minor jaw trauma care.</p>
+              <div class="mt-4 pt-4 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+                <p><i class="fa-solid fa-award text-amber-500 mr-2"></i> Pain-Free Surgical Extractions</p>
+                <p><i class="fa-regular fa-clock text-blue-500 mr-2"></i> Mon - Sat: On Appointment</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="contact.html?doc=Dr.+Saurav#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold">
+              Book Appointment with Dr. Saurav
+            </a>
+          </div>
+        </div>
+
+        <!-- Dr Tapan Mandal -->
+        <div class="doctor-card bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-72 sm:h-80 bg-emerald-50 relative overflow-hidden flex items-center justify-center">
+              <img src="assets/images/doctors/dr_tapan_mandal.jpg" alt="Dr. Tapan Mandal" class="h-full w-full object-cover object-[center_16%]" />
+              <span class="absolute bottom-3 left-3 bg-emerald-900/85 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-md shadow">MDS Endodontist</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900">Dr. Tapan Mandal</h3>
+              <p class="text-sm font-semibold text-emerald-700 mt-0.5">RCT Specialist</p>
+              <p class="text-xs text-slate-500 mt-2">Specializing in single-sitting, computerized rotary Root Canal Treatments (RCT) and aesthetic restorative endodontics.</p>
+              <div class="mt-4 pt-4 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+                <p><i class="fa-solid fa-award text-amber-500 mr-2"></i> Rotary Endodontics Expert</p>
+                <p><i class="fa-regular fa-clock text-blue-500 mr-2"></i> Mon - Sat: Full Day</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="contact.html?doc=Dr.+Tapan+Mandal#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold">
+              Book Appointment with Dr. Tapan
+            </a>
+          </div>
+        </div>
+
+        <!-- Dr Sparsh -->
+        <div class="doctor-card bg-white rounded-2xl border border-slate-200 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="h-72 sm:h-80 bg-blue-50 relative overflow-hidden flex items-center justify-center">
+              <img src="assets/images/doctors/dr_sparsh.jpg" alt="Dr. Sparsh" class="h-full w-full object-cover object-[center_16%]" />
+              <span class="absolute bottom-3 left-3 bg-blue-900/85 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-md shadow">MDS Orthodontist</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900">Dr. Sparsh</h3>
+              <p class="text-sm font-semibold text-brand-blue mt-0.5">Orthodontics Specialist</p>
+              <p class="text-xs text-slate-500 mt-2">Specializing in metal braces, ceramic aesthetic brackets, invisible clear aligners, and comprehensive smile correction for crooked teeth.</p>
+              <div class="mt-4 pt-4 border-t border-slate-100 text-xs space-y-2 text-slate-600">
+                <p><i class="fa-solid fa-award text-amber-500 mr-2"></i> Certified Clear Aligners Provider</p>
+                <p><i class="fa-regular fa-clock text-blue-500 mr-2"></i> Mon - Sat: Evening Sessions</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="contact.html?doc=Dr.+Sparsh#appointment" class="btn-primary w-full text-center py-2.5 text-xs font-bold">
+              Book Appointment with Dr. Sparsh
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BAND -->
+  <section class="py-16 bg-gradient-to-r from-blue-900 via-blue-950 to-slate-900 text-white text-center">
+    <div class="site-container max-w-3xl">
+      <h2 class="text-2xl sm:text-3xl font-bold">Ready for World-Class Dental Care in Ranchi?</h2>
+      <p class="text-slate-300 mt-3 text-sm sm:text-base">Visit our clinic at Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi. Consult with our 5 specialists today.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="contact.html#appointment" class="btn-primary py-3.5 px-8 text-sm font-bold shadow-lg">
+          <i class="fa-solid fa-calendar-check mr-2"></i> Book Consultation
+        </a>
+        <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="btn-red py-3.5 px-6 text-sm font-bold shadow-lg">
+          <i class="fa-brands fa-whatsapp mr-2 text-lg"></i> Instant WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 text-sm pt-12 pb-8 border-t border-slate-900">
+    <div class="site-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-slate-900">
+        <div class="lg:col-span-2">
+          <img src="assets/images/logo.png" alt="Hi Dent Dental Clinic Logo" class="h-10 w-auto mb-3 brightness-110" />
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            Hi Dent Dental Clinic brings Ranchi's top 5 dental super-specialists under one roof at Heritage Garden, Deepatoli. Painless RCT, Dental Implants, Braces & Aligners, and caring Pediatric Dentistry.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Specialists</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Harish Kumar (Periodontist)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Moni Seema (Pedodontist)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Saurav (Oral Surgeon)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Tapan Mandal (RCT)</a></li>
+            <li><a href="doctors.html" class="hover:text-blue-400">Dr. Sparsh (Orthodontics)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Treatments</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="services.html" class="hover:text-blue-400">Root Canal Treatment</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Dental Implants</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Braces & Aligners</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Teeth Whitening</a></li>
+            <li><a href="services.html" class="hover:text-blue-400">Kids Dentistry</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-3">Visit Clinic</h4>
+          <p class="text-xs text-slate-400">Heritage Garden, Opp. Surendranath School, Deepatoli, Ranchi - 834001</p>
+          <p class="text-xs text-white font-bold mt-2"><a href="tel:7004184115">+91 7004184115</a></p>
+        </div>
+      </div>
+      <div class="pt-6 text-center text-xs text-slate-500">
+        Â© 2026 Hi Dent Dental Clinic Ranchi. All Rights Reserved. â€¢ Healthy Teeth, Confident Smile.
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING ACTIONS -->
+  <div class="floating-actions" aria-label="Quick Contact Buttons">
+    <a href="https://wa.me/917004184115" target="_blank" rel="noopener noreferrer" class="floating-btn floating-whatsapp" title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+    <a href="tel:7004184115" class="floating-btn floating-call" title="Call Clinic Directly">
+      <i class="fa-solid fa-phone text-xl"></i>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
