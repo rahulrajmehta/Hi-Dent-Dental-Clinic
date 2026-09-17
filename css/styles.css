@@ -78,6 +78,19 @@ body.subpage .font-heading,
   letter-spacing: -0.015em;
 }
 
+/* Ensure dark section headings and text-white headings are always pure white (fixes black heading on dark blue bug) */
+.text-white,
+.text-white h1, .text-white h2, .text-white h3, .text-white h4, .text-white h5, .text-white h6,
+h1.text-white, h2.text-white, h3.text-white, h4.text-white, h5.text-white, h6.text-white,
+section.text-white h1, section.text-white h2, section.text-white h3,
+section[class*="bg-gradient-"] h1, section[class*="bg-gradient-"] h2, section[class*="bg-gradient-"] h3,
+section[class*="bg-slate-900"] h1, section[class*="bg-slate-900"] h2, section[class*="bg-slate-900"] h3,
+section[class*="bg-slate-950"] h1, section[class*="bg-slate-950"] h2, section[class*="bg-slate-950"] h3,
+section[class*="bg-blue-900"] h1, section[class*="bg-blue-900"] h2, section[class*="bg-blue-900"] h3,
+.cta-band h1, .cta-band h2, .cta-band h3 {
+  color: #ffffff !important;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -177,6 +190,33 @@ body.subpage .font-heading,
   background-color: var(--color-accent-red-hover);
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(220, 38, 38, 0.35);
+}
+
+/* Official WhatsApp Green Action Button */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: #ffffff !important;
+  padding: 0.75rem 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1px solid #20bd5a;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.28);
+  cursor: pointer;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20bd5a;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.38);
 }
 
 .btn-outline {
@@ -774,15 +814,15 @@ body.subpage .font-heading,
 }
 
 /* 5. CTA Buttons Micro-Interactions (Scale on hover, press effect on click) */
-.btn-primary, .btn-red, .btn-outline {
+.btn-primary, .btn-whatsapp, .btn-red, .btn-outline {
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, background-color 0.2s ease !important;
 }
 
-.btn-primary:hover, .btn-red:hover, .btn-outline:hover {
+.btn-primary:hover, .btn-whatsapp:hover, .btn-red:hover, .btn-outline:hover {
   transform: translateY(-2px) scale(1.02);
 }
 
-.btn-primary:active, .btn-red:active, .btn-outline:active {
+.btn-primary:active, .btn-whatsapp:active, .btn-red:active, .btn-outline:active {
   transform: translateY(1px) scale(0.97) !important;
 }
 
