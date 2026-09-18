@@ -98,6 +98,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // URL Query Parameters Auto-Select (?doc=... or ?treatment=...)
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const docParam = urlParams.get('doc');
+    const treatParam = urlParams.get('treatment');
+    if (doctorSelect && docParam) {
+      const cleanDoc = decodeURIComponent(docParam).toLowerCase().replace(/\+/g, ' ');
+      for (let i = 0; i < doctorSelect.options.length; i++) {
+        const optText = doctorSelect.options[i].text.toLowerCase();
+        const optVal = doctorSelect.options[i].value.toLowerCase();
+        if (optText.includes(cleanDoc) || optVal.includes(cleanDoc)) {
+          doctorSelect.selectedIndex = i;
+          break;
+        }
+      }
+    }
+    if (treatmentSelect && treatParam) {
+      const cleanTreat = decodeURIComponent(treatParam).toLowerCase().replace(/\+/g, ' ');
+      for (let i = 0; i < treatmentSelect.options.length; i++) {
+        const optText = treatmentSelect.options[i].text.toLowerCase();
+        const optVal = treatmentSelect.options[i].value.toLowerCase();
+        if (optText.includes(cleanTreat) || optVal.includes(cleanTreat)) {
+          treatmentSelect.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  } catch (e) {
+    // Ignore URL parse errors
+  }
+
   // Before & After Interactive Slider
   const compContainer = document.getElementById('comparison-box');
   const compBefore = document.getElementById('comparison-before');

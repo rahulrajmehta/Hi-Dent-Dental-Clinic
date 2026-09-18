@@ -413,15 +413,15 @@ section[class*="bg-blue-900"] h1, section[class*="bg-blue-900"] h2, section[clas
   border-color: #cbd5e1;
 }
 
-/* Doctor Image Frame - Mobile responsive height & optical center */
+/* Doctor Image Frame - Clean, spacious portrait matching client reference */
 .doctor-portrait-box {
   position: relative;
   width: 100%;
-  height: 310px;
-  background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+  height: 330px;
+  background: #f8fafc;
   overflow: hidden;
-  border-top-left-radius: var(--radius-md);
-  border-top-right-radius: var(--radius-md);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -429,13 +429,13 @@ section[class*="bg-blue-900"] h1, section[class*="bg-blue-900"] h2, section[clas
 
 @media (min-width: 640px) and (max-width: 1023px) {
   .doctor-portrait-box {
-    height: 290px;
+    height: 310px;
   }
 }
 
 @media (min-width: 1024px) {
   .doctor-portrait-box {
-    height: 275px;
+    height: 320px;
   }
 }
 
@@ -448,7 +448,14 @@ section[class*="bg-blue-900"] h1, section[class*="bg-blue-900"] h2, section[clas
 }
 
 .doctor-card:hover .doctor-portrait-box img {
-  transform: scale(1.04);
+  transform: scale(1.03);
+}
+
+.doctor-card-line {
+  width: 3.5rem;
+  height: 4px;
+  border-radius: 9999px;
+  background-color: #dc2626;
 }
 
 /* Premium Subpage Hero Banner with Background Image */
